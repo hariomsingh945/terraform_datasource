@@ -8,13 +8,13 @@ publicip = {
    "pubip02" = {
     "name"            = "frontendpublicip"
     "location"        = "westeurope"
-    "rg_name"         = "rg_group1"
+    "rg_name"         = "rg_group2"
     "allocation_type" = "Static"
   }
      "pubip03" = {
     "name"            = "frontendpublicip2"
     "location"        = "westeurope"
-    "rg_name"         = "rg_group1"
+    "rg_name"         = "rg_group3"
     "allocation_type" = "Static"
   }
 }

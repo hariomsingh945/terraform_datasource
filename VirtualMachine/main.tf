@@ -8,7 +8,7 @@ resource "azurerm_linux_virtual_machine" "vm_example" {
   admin_password                  = data.azurerm_key_vault_secret.password.value
   disable_password_authentication = false
   computer_name = each.value.computer_name
-  network_interface_ids           = each.value.network_interface_ids
+  network_interface_ids           = data.azurerm_network_interface.example[each.key].id
       
   #admin_ssh_key {
   #  username   = "adminuser"

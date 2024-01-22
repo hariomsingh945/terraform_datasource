@@ -3,30 +3,33 @@ niccards = {
     "name"       = "frontvmnic01"
     "location"   = "westeurope"
     "rg_name"    = "rg_group1"
+    "vnet"       = "vnet_01-network"
     "ipname"     = "internal"
-    "subnetid"   = "/subscriptions/332d775e-6945-45da-a2ce-c0e14faa203f/resourceGroups/rg_group1/providers/Microsoft.Network/virtualNetworks/vnet_01-network/subnets/frontend01"
+    "subnetid"   = "frontend01"
     "private_ip" = "Dynamic"
-    "publicid" = "/subscriptions/332d775e-6945-45da-a2ce-c0e14faa203f/resourceGroups/rg_group1/providers/Microsoft.Network/publicIPAddresses/publicip_01"
+    "publicid"   = "publicip_01"
   },
 
   "niccard3" = {
     "name"       = "frontvmnic03"
     "location"   = "westeurope"
-    "rg_name"    = "rg_group1"
+    "rg_name"    = "rg_group3"
+    "vnet"       = "vnet_03-network"
     "ipname"     = "internal2"
-    "subnetid"   = "/subscriptions/332d775e-6945-45da-a2ce-c0e14faa203f/resourceGroups/rg_group1/providers/Microsoft.Network/virtualNetworks/vnet_01-network/subnets/frontend01"
+    "subnetid"   = "AzureBastionSubnet"
     "private_ip" = "Dynamic"
-    "publicid" = "/subscriptions/332d775e-6945-45da-a2ce-c0e14faa203f/resourceGroups/rg_group1/providers/Microsoft.Network/publicIPAddresses/frontendpublicip"
+    "publicid"   = "frontendpublicip2"
   },
 
   "niccard2" = {
     "name"       = "backendvmnic013"
     "location"   = "westeurope"
-    "rg_name"    = "rg_group1"
+    "rg_name"    = "rg_group2"
+    "vnet"       = "vnet_02-network"
     "ipname"     = "internal3"
-    "subnetid"   = "/subscriptions/332d775e-6945-45da-a2ce-c0e14faa203f/resourceGroups/rg_group1/providers/Microsoft.Network/virtualNetworks/vnet_01-network/subnets/backend01"
+    "subnetid"   = "backend01"
     "private_ip" = "Dynamic"
-    "publicid" = "/subscriptions/332d775e-6945-45da-a2ce-c0e14faa203f/resourceGroups/rg_group1/providers/Microsoft.Network/publicIPAddresses/frontendpublicip2"
+    "publicid"   = "frontendpublicip"
   }
 }
 
